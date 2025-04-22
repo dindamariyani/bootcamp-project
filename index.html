@@ -5,15 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/src/style.css" rel="stylesheet" />
   </head>
-  <body class="font-space">
+  <body class="font-space bg-white">
     <main class="bg-white">
       <!-- Navbar -->
-      <navbar class="mx-auto flex flex-col sm:flex-row w-full max-w-[1240px] items-center justify-between pt-8 pb-1.5 gap-4 sm:gap-0">
-        <img src="/svg/positivus-logo.png" />
-        <button id="menu-btn" class="text-3xl md:hidden focus:outline-none">
-          ☰
-        </button>
-        <div id="menu" class="items-center gap-10 hidden md:flex space-x-6">
+      <navbar class="mx-auto flex w-full max-w-[1240px] items-center justify-between pt-8 pb-1.5 px-4 md:px-0">
+        <img src="/svg/positivus-logo.png" alt="logo-positivus" class="w-[219px] md:w-auto">
+        <div class="hidden md:flex items-center gap-10">
           <a class="text-xl leading-7">About Us</a>
           <a class="text-xl leading-7">Services</a>
           <a class="text-xl leading-7">Use Cases</a>
@@ -21,31 +18,37 @@
           <a class="text-xl leading-7">Blog</a>
           <button class="rounded-[14px] border px-[35px] py-5 text-xl leading-7">Request a quote</button>
         </div>
+        <div class="block md:hidden text-3xl">☰</div>
       </navbar>
       <!-- End Navbar -->
 
       <!-- Section Hero -->
-      <div class="mx-auto flex h-auto sm:h-screen w-full items-center px-4">
+      <div class="mx-auto flex flex-col h-auto w-full items-center md:text-left md:flex-row lg:px-0 px-6">
         <!-- Layout -->
-        <div class="mx-auto flex w-full max-w-[1240px] flex-col-reverse sm:flex-row items-center justify-between gap-10 py-10">
+        <div class="mx-auto flex w-full max-w-[1240px] h-auto md:h-[550px] flex-col md:flex-row items-center justify-between">
           <!-- Left Content -->
           <div class="max-w-[531px] flex-1 flex-col">
-            <h1 class="sm:text-6xl font-medium text-black text-center sm:text-left">Navigating the digital landscape for success</h1>
-            <p class="mt-[35px] text-xl font-normal text-black">
+            <h1 class="mt-10 md:mt-0 text-5xl md:text-6xl font-medium text-black md:text-left">Navigating the digital landscape for success</h1>
+            <div class="flex mt-4 md:hidden justify-center">
+              <img src="./public/svg/illustration-hero.svg" alt="illustration-hero" >
+            </div>
+            <p class="mt-[35px] text-base md:text-xl font-normal text-black">
               Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and
               content creation.
             </p>
-            <button class="bg-black mt-[35px] rounded-xl px-23 py-5 text-white">Book a consultation</button>
+            <button class="bg-black w-full rounded-xl py-4 mt-6 text-white text-base md:w-auto md:px-9 md:py-5 md:mt-[35px]">Book a consultation</button>
           </div>
           <!-- Right Content -->
-          <img src="/svg/illustration-hero.svg" class="h-[500px] w-[500px]" />
+          <div class="hidden md:flex">
+            <img src="./public/svg/illustration-hero.svg" alt="illustration-hero">
+          </div>
         </div>
       </div>
        <!-- End Section Hero -->
 
 
 <!-- Clients Section -->
-      <section class="mx-auto max-w-[1240px] max-h-[310px] flex flex-wrap justify-between gap-12 grayscale">
+      <section class="mx-auto max-w-[1240px] flex flex-wrap justify-center md:justify-between gap-12 mt-12 px-4 grayscale">
         <img src="/svg/logo-amazon.svg" alt="Amazon" class="h-10">
         <img src="/svg/logo-dribbble.svg" alt="Dribbble" class="h-10">
         <img src="/svg/logo-hubspot.svg" alt="HubSpot" class="h-10">
@@ -53,13 +56,14 @@
         <img src="/svg/logo-netflix.png" alt="Netflix" class="h-10">
         <img src="/svg/logo-zoom.png" alt="Zoom" class="h-10">
       </section>
+      
       <!-- End Clients Section -->
 
        <!-- Services Section -->
-      <div class="mx-auto flex w-full max-w-[1240px] flex-col mt-28">
-        <div class="flex flex-row gap-10 items-center">
+      <div class="mx-auto flex w-full max-w-[1240px] flex-col mt-28 px-4">
+        <div class="flex flex-col md:flex-row gap:6 md:gap-10 items-center md:items-start text-center md:text-left justify-center md:justify-start">
         <h2 class="bg-brand-300 text-[40px] font-medium text-black px-[7px] rounded-[7px]">Services</h2>
-        <p class="text-lg text-black max-w-[580px]">
+        <p class="text-base md:text-lg text-black md:max-w-[580px] mt-4 md:mt-0">
           At our digital marketing agency, we offer a range of services to 
           help businesses grow and succeed online. These services include:
         </p>
@@ -67,8 +71,8 @@
       </div>
 
     <!-- card section 1-->
-    <div class="mx-auto max-w-[1240px] grid grid-cols-1 sm:grid-cols-2 gap-10 px-4 sm:px-9 my-20">
-    <div class="max-w-[600px] max-h-[310px] rounded-[45px] border p-[50px] bg-gray-50 flex drop-shadow-card">
+    <div class="mx-auto max-w-[1240px] max-h-[1010px] grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 px-9 my-20">
+    <div class="max-w-full rounded-[45px] border p-[50px] bg-gray-50 flex drop-shadow-card">
       <div class="max-w-[221px] max-h-[210px] gap-[93px]">
         <h3 class="font-medium text-3xl bg-brand-300 rounded-[7px] w-fit px-[7px]">Search engine</h3>
         <h3 class="font-medium text-3xl bg-brand-300 rounded-[7px] w-fit px-[7px]">optimization</h3>
@@ -176,7 +180,7 @@
       <!-- End Services Section -->
 
       <!-- CTA block -->
-      <div class="mx-auto items-center max-w-[1240px] rounded-[45px] p-6 sm:p-[60px] bg-gray-100 flex flex-col sm:flex-row text-center sm:text-left gap-10 my-20">
+        <div class="mx-auto items-center max-w-[1240px] max-h-[347px] rounded-[45px] p-[60px] bg-gray-100 flex">
         <!-- Left Content -- -->
         <div class="max-w-[500px] max-h-[227px]">
           <h3 class="font-bold text-3xl text-black">Let’s make things happen</h3>
@@ -200,7 +204,7 @@
           Explore Real-Life Examples of Our Proven Digital Marketing 
           Success through Our Case Studies
         </p>
-      </div>
+        </div>
       </div>
 
 
