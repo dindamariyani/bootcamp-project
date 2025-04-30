@@ -1,736 +1,783 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/src/style.css" rel="stylesheet" />
-  </head>
-  <body class="font-space mx-auto max-w-[1240px]">
-    <main class="bg-white">
-      <!-- NOTE : HARUS DIPERBAIKI ketika mobile -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/src/style.css" rel="stylesheet" />
+</head>
+<body class="font-space mx-auto max-w-[1240px]">
+  <main class="bg-white">
 
-      <!-- Navbar -->
-        <navbar class="mx-auto flex w-full items-center justify-between pt-8 pb-1.5 px-4 lg:px-0">
-          <img src="/svg/positivus-logo.png" alt="logo-positivus" class="w-[130px] lg:w-[219px]">
-          <div class="hidden lg:flex items-center gap-10">
-            <a href="#" class="text-xl leading-7">About Us</a>
-            <a href="#" class="text-xl leading-7">Services</a>
-            <a href="#" class="text-xl leading-7">Use Cases</a>
-            <a href="#" class="text-xl leading-7">Pricing</a>
-            <a href="#" class="text-xl leading-7">Blog</a>
-            <button class="rounded-[14px] border px-[35px] py-5 text-xl leading-7">Request a quote</button>
+    <!-- Navbar -->
+    <navbar class="mx-auto flex w-full items-center justify-between pt-8 pb-1.5 px-4 lg:px-0">
+      <img src="/svg/positivus-logo.png" alt="logo-positivus" class="w-auto lg:w-[219px]">
+      <div class="hidden lg:flex items-center gap-10">
+        <a href="#" class="text-xl leading-7">About Us</a>
+        <a href="#" class="text-xl leading-7">Services</a>
+        <a href="#" class="text-xl leading-7">Use Cases</a>
+        <a href="#" class="text-xl leading-7">Pricing</a>
+        <a href="#" class="text-xl leading-7">Blog</a>
+        <button class="rounded-[14px] border px-[35px] py-5 text-xl leading-7">Request a quote</button>
+      </div>
+      <div class="block lg:hidden text-3xl cursor-pointer" aria-label="Open menu">☰</div>
+    </navbar>
+    <!-- End Navbar -->
+
+    <!-- Section Hero -->
+    <div class="mx-auto flex flex-col h-auto w-full items-center lg:text-left lg:flex-row lg:px-0 px-6">
+      <!-- Layout -->
+      <div class="mx-auto flex w-full h-auto lg:h-[550px] flex-col lg:flex-row items-center justify-between">
+        <!-- Left Content -->
+        <div class="max-w-[531px] flex-1 flex-col">
+          <h1 class="mt-10 lg:mt-0 text-5xl lg:text-6xl font-medium text-black lg:text-left">
+            Navigating the digital landscape for success
+          </h1>
+          <div class="flex lg:hidden mt-2 lg:mt-4 justify-center">
+            <img src="./public/svg/illustration-hero.svg" alt="illustration-hero">
           </div>
-          <div class="block lg:hidden text-3xl cursor-pointer" aria-label="Open menu">☰</div>
-        </navbar>
+          <p class="mt-[35px] text-base lg:text-xl font-normal text-black">
+            Our digital marketing agency helps businesses grow and succeed online through a range of services including
+            SEO, PPC, social media marketing, and
+            content creation.
+          </p>
+          <button
+            class="bg-black w-full rounded-xl py-4 mt-6 text-white text-base lg:w-auto lg:px-9 lg:py-5 lg:mt-[35px]">
+            Book a consultation
+          </button>
+        </div>
+        <!-- Right Content -->
+        <div class="hidden lg:flex">
+          <img src="./public/svg/illustration-hero.svg" alt="illustration-hero">
+        </div>
+      </div>
+    </div>
+    <!-- End Section Hero -->
 
-        <!-- End Navbar -->
-        <!-- END NOTE : HARUS DIPERBAIKI ketika mobile -->
 
-        <!-- Section Hero -->
-        <div class="mx-auto flex flex-col h-auto w-full items-center lg:text-left lg:flex-row lg:px-0 px-6">
-          <!-- Layout -->
-          <div class="mx-auto flex w-full h-auto lg:h-[550px] flex-col lg:flex-row items-center justify-between">
-            <!-- Left Content -->
-            <div class="max-w-[531px] flex-1 flex-col">
-              <h1 class="mt-10 lg:mt-0 text-4xl lg:text-6xl font-medium text-black lg:text-left">
-                Navigating the digital landscape for success
-              </h1>
-              <div class="flex lg:hidden mt-2 lg:mt-4 justify-center">
-                <img src="./public/svg/illustration-hero.svg" alt="illustration-hero">
+    <!-- Clients Section -->
+    <section
+      class="mx-auto max-w-[1240px] flex flex-wrap justify-center lg:justify-between gap-12 mt-12 px-4 grayscale">
+      <img src="/svg/logo-amazon.svg" alt="Amazon" class="h-10">
+      <img src="/svg/logo-dribbble.svg" alt="Dribbble" class="h-10">
+      <img src="/svg/logo-hubspot.svg" alt="HubSpot" class="h-10">
+      <img src="/svg/logo-notion.svg" alt="Notion" class="h-10">
+      <img src="/svg/logo-netflix.png" alt="Netflix" class="h-10">
+      <img src="/svg/logo-zoom.png" alt="Zoom" class="h-10">
+    </section>
+    <!-- End Clients Section -->
+
+    <!-- Services Section -->
+    <div class="mx-auto flex w-full flex-col mt-28 px-4">
+      <div class="flex flex-col lg:flex-row gap-6 lg:gap-10 items-center lg:items-start text-center lg:text-left justify-center lg:justify-start">
+        <h2 class="bg-brand-300 text-[40px] font-medium text-black px-[7px] rounded-[7px]">Services</h2>
+        <p class="text-base lg:text-lg text-black max-w-[580px]">
+          At our digital marketing agency, we offer a range of services to
+          help businesses grow and succeed online. These services include:
+        </p>
+      </div>
+    </div>
+
+    <!-- Service Block -->
+    <div class="mx-auto max-w-full px-4 lg:px-0 flex flex-col lg:grid lg:grid-cols-2 gap-10 mt-20">
+      <!-- card section 1-->
+      <div class="w-full h-[310px] lg:justify-between rounded-[45px] border p-10 lg:p-[50px] bg-gray-50 flex drop-shadow-card">
+        <div class="flex flex-col justify-between">
+          <div class="flex flex-col">
+            <h3 class="font-medium text-2xl lg:text-3xl bg-brand-300 rounded-[7px] w-fit px-[7px]">Search engine</h3>
+            <h3 class="font-medium text-2xl lg:text-3xl bg-brand-300 rounded-[7px] w-fit px-[7px]">optimization</h3>
+          </div>
+          <div>
+            <a href="#" class="gap-4 flex items-center">
+              <img src="./public/svg/Icon-panah1.svg" alt="icon-panah">
+              <span class="text-[20px] leading-[28px] py-2 lg:flex hidden">Learn more</span>
+            </a>
+          </div>
+        </div>
+        <div class="w-[210px] h-full flex items-end lg:items-start">
+          <img src="./public/svg/Illustration-1.svg" alt="Illustration-1">
+        </div>
+      </div>
+
+      <!-- card section 2-->
+      <div class="w-full h-[310px] lg:justify-between rounded-[45px] border p-10 lg:p-[50px] bg-brand-300 flex drop-shadow-card">
+        <div class="flex flex-col justify-between">
+          <div class="flex flex-col">
+            <h3 class="font-medium text-2xl lg:text-3xl bg-white rounded-[7px] w-fit px-[7px]">Pay-per-clicka</h3>
+            <h3 class="font-medium text-2xl lg:text-3xl bg-white rounded-[7px] w-fit px-[7px]">advertising</h3>
+          </div>
+          <div>
+            <a href="#" class="gap-4 flex items-center">
+              <img src="./public/svg/Icon-panah1.svg" alt="icon-panah">
+              <span class="text-[20px] leading-[28px] py-2 hidden lg:flex">Learn more</span>
+            </a>
+          </div>
+        </div>
+        <div class="w-[210px] h-full flex items-end lg:items-start">
+          <img src="./public/svg/Illustration-2.svg" alt="Illustration-2">
+        </div>
+      </div>
+
+
+      <!-- card section 3-->
+      <div class="w-full h-[310px] lg:justify-between rounded-[45px] border p-10 lg:p-[50px] bg-black flex drop-shadow-card">
+        <div class="flex flex-col justify-between">
+          <div class="flex flex-col">
+            <h3 class="font-medium text-2xl lg:text-3xl bg-white rounded-[7px] w-fit px-[7px]">Social Media</h3>
+            <h3 class="font-medium text-2xl lg:text-3xl bg-white rounded-[7px] w-fit px-[7px]">Marketing</h3>
+          </div>
+          <div>
+            <a href="#" class="gap-4 flex items-center">
+              <img src="./public/svg/Icon-panah2.svg" alt="icon-panah">
+              <span class="text-[20px] leading-[28px] py-2 hidden lg:flex">Learn more</span>
+            </a>
+          </div>
+        </div>
+        <div class="w-[210px] h-full flex items-end lg:items-start">
+          <img src="./public/svg/Illustration-3.svg" alt="Illustration-3">
+        </div>
+      </div>
+
+      <!-- card section 4-->
+      <div class="w-full h-[310px] lg:justify-between rounded-[45px] border p-10 lg:p-[50px] bg-gray-50 flex drop-shadow-card">
+        <div class="flex flex-col justify-between">
+          <div class="flex flex-col">
+            <h3 class="font-medium text-2xl lg:text-3xl bg-brand-300 rounded-[7px] w-fit px-[7px]">Email</h3>
+            <h3 class="font-medium text-2xl lg:text-3xl bg-brand-300 rounded-[7px] w-fit px-[7px]">Marketing</h3>
+          </div>
+          <div>
+            <a href="#" class="gap-4 flex items-center">
+              <img src="./public/svg/Icon-panah1.svg" alt="icon-panah">
+              <span class="text-[20px] leading-[28px] py-2 hidden lg:flex">Learn more</span>
+            </a>
+          </div>
+        </div>
+        <div class="w-[145px] lg:w-[210px] h-full flex items-end lg:items-start">
+          <img src="./public/svg/Illustration-4.svg" alt="Illustration-4">
+        </div>
+      </div>
+
+      <!-- card section 5-->
+      <div class="w-full h-[310px] lg:justify-between rounded-[45px] border p-10 lg:p-[50px] bg-brand-300 flex drop-shadow-card">
+        <div class="flex flex-col justify-between">
+          <div class="flex flex-col">
+            <h3 class="font-medium text-2xl lg:text-3xl bg-white rounded-[7px] w-fit px-[7px]">Content</h3>
+            <h3 class="font-medium text-2xl lg:text-3xl bg-white rounded-[7px] w-fit px-[7px]">Creation</h3>
+          </div>
+          <div>
+            <a href="#" class="gap-4 flex items-center">
+              <img src="./public/svg/Icon-panah1.svg" alt="icon-panah">
+              <span class="text-[20px] leading-[28px] py-2 hidden lg:flex">Learn more</span>
+            </a>
+          </div>
+        </div>
+        <div class="w-[210px] h-full flex items-end lg:items-start">
+          <img src="./public/svg/Illustration-5.svg" alt="Illustration-5">
+        </div>
+      </div>
+
+      <!-- card section 6-->
+      <div class="w-full h-[310px] lg:justify-between rounded-[45px] border p-10 lg:p-[50px] bg-black flex drop-shadow-card">
+        <div class="flex flex-col justify-between">
+          <div class="flex flex-col">
+            <h3 class="font-medium text-2xl lg:text-3xl bg-white rounded-[7px] w-fit px-[7px]">Analytics and</h3>
+            <h3 class="font-medium text-2xl lg:text-3xl bg-white rounded-[7px] w-fit px-[7px]">Tracking</h3>
+          </div>
+          <div>
+            <a href="#" class="gap-4 flex items-center">
+              <img src="./public/svg/Icon-panah2.svg" alt="icon-panah">
+              <span class="text-[20px] leading-[28px] py-2 hidden lg:flex">Learn more</span>
+            </a>
+          </div>
+        </div>
+        <div class="w-[210px] h-full flex items-end lg:items-start">
+          <img src="./public/svg/Illustration-6.svg" alt="Illustration-6">
+        </div>
+      </div>
+    </div>
+    <!-- End Services Section -->
+
+    <!-- CTA block -->
+    <div class="p-4">
+      <div class="mx-auto items-center w-full rounded-[45px] p-[45px] lg:p-[60px] bg-gray-100 flex mt-16">
+        <!-- Left Content -- -->
+        <div class="max-w-[500px]">
+          <h3 class="font-bold text-2xl lg:text-3xl text-black">Let’s make things happen</h3>
+          <p class="mt-6 text-base lg:text-lg text-black">
+            Contact us today to learn more about how our digital
+            marketing services can help your business grow and succeed online.</p>
+          <button class="w-full lg:w-[290px] bg-black mt-6 rounded-xl px-9 py-5 text-white text-sm lg:text-xl">
+            <span class="hidden lg:block">Get your free proposal</span>
+            <span class="block lg:hidden">Get your proposal</span>
+          </button>
+        </div>
+        <!-- Right Content -->
+        <div class="max-w-[500px] max-h-[395px] hidden lg:flex ml-auto">
+          <img src="./public/svg/Illustration-CTA.svg" class="h-[300px] w-[400px] object-contain" alt="Ilustration-CTA">
+        </div>
+      </div>
+    </div>
+    <!-- end CTA block -->
+
+    <!-- Case Studies Section -->
+    <div class="mx-auto flex w-full flex-col mt-28 px-4">
+      <div
+        class="flex flex-col lg:flex-row gap-6 lg:gap-10 items-center lg:items-start text-center lg:text-left justify-between lg:justify-start">
+        <h2 class="bg-brand-300 text-[40px] font-medium text-black px-[7px] rounded-[7px]">Case Studies</h2>
+        <p class="text-base lg:text-lg text-black max-w-[580px] mb-10">
+          Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies
+        </p>
+      </div>
+    </div>
+
+
+    <!-- flex lg:hidden( hanya terlihat di mobile, tapi tidak terlihat di dekstop). 
+              hidden lg:flex( tidak terlihat di mobile, tapi terlihat di dekstop) -->
+
+    <!-- Case Studies Cards -->
+    <div class="mx-auto max-w-[1240px] h-[326px] bg-dark-2 text-lg text-white rounded-[45px] hidden lg:flex justify-between gap-16 p-[70px_60px] mt-16">
+      <!-- Card section 1 -->
+      <div class="flex-1 flex flex-col justify-between">
+        <p class="max-w-[286px]">For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50%
+          increase in website traffic and a 25% increase in sales.</p>
+        <a href="#" class="mt-4 flex items-center text-brand-200 gap-4">
+          Learn more <img src="./public//svg/Icon-Link.svg" class="w-[17px]">
+        </a>
+      </div>
+
+      <!-- Garis pemisah -->
+      <div class="w-[1px] bg-gray-500 mx-auto"></div>
+
+
+      <!-- Card section 2 -->
+      <div class="flex-1 flex flex-col justify-between">
+        <p class="max-w-[286px]">For a B2B software company, we developed an SEO strategy that resulted in a first
+          page
+          ranking for key keywords and a 200% increase in organic traffic.</p>
+        <a href="#" class="mt-4 flex items-center text-brand-200 gap-4">
+          Learn more <img src="./public//svg/Icon-Link.svg" class="w-[17px]">
+        </a>
+      </div>
+
+      <!-- Garis pemisah -->
+      <div class="w-[1px] bg-gray-500 mx-auto"></div>
+
+      <!-- Card section 3 -->
+      <div class="flex-1 flex flex-col justify-between">
+        <p class="max-w-[286px]">For a national retail chain, we created a social media marketing campaign that
+          increased followers by 25% and generated a 20% increase in online sales.</p>
+        <a href="#" class="mt-4 flex items-center text-brand-200 gap-4">
+          Learn more <img src="./public//svg/Icon-Link.svg" class="w-[17px]">
+        </a>
+      </div>
+    </div>
+
+    <!-- Responsive -->
+    <div class="max-w-3xl px-4 overflow-x-auto scrollbar-hide flex lg:hidden">
+      <div class="flex min-w-[1180px] gap-2.5">
+        <div class="bg-gray-900 w-[326px] h-[280px] rounded-[45px] text-white flex flex-col justify-center p-10">
+          <p>For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website
+            traffic and a 25% increase in sales.</p>
+          <a href="#" class="mt-4 flex items-center text-brand-200 gap-4"> Learn more
+            <img src="./public/svg/Icon-Link.svg" class="w-[17px]">
+          </a>
+        </div>
+        <div class="bg-gray-900 w-[326px] h-[280px] rounded-[45px] text-white flex flex-col justify-center p-10">
+          <p>For an e-commerce company, we developed a comprehensive SEO strategy that led to a 30% increase in organic
+            traffic and a 20% boost in conversions.</p>
+          <a href="#" class="mt-4 flex items-center text-brand-200 gap-4"> Learn more
+            <img src="./public/svg/Icon-Link.svg" class="w-[17px]">
+          </a>
+        </div>
+        <div class="bg-gray-900 w-[326px] h-[280px] rounded-[45px] text-white flex flex-col justify-center p-10">
+          <p>For a healthcare provider, we created a social media campaign that increased followers by 50% and
+            engagement by 200% within just 6 months.</p>
+          <a href="#" class="mt-4 flex items-center text-brand-200 gap-4"> Learn more
+            <img src="./public/svg/Icon-Link.svg" class="w-[17px]">
+          </a>
+        </div>
+      </div>
+    </div>
+  <!-- End -->
+
+
+    <!-- Our Working Process Section -->
+    <div class="mx-auto flex w-full flex-col mt-28 px-4">
+      <div class="flex flex-col lg:flex-row gap-6 lg:gap-10 items-center lg:items-start text-center lg:text-left justify-between lg:justify-start">
+        <h2 class="bg-brand-300 text-[40px] font-medium text-black px-[7px] rounded-[7px] hidden lg:flex">Our Working
+          Process</h2>
+        <div class="flex lg:hidden flex-col items-center">
+          <h2 class="bg-brand-300 text-[40px] font-medium text-black px-[7px] rounded-[7px] w-fit">Our Working</h2>
+          <h2 class="bg-brand-300 text-[40px] font-medium text-black px-[7px] rounded-[7px] w-fit">Process</h2>
+        </div>
+        <p class="text-base lg:text-lg text-black max-w-[292px]">
+          Step-by-Step Guide to Achieving Your Business Goals
+        </p>
+      </div>
+    </div>
+
+    <!-- Block process -->
+    <div class="mx-auto max-w-[1240px] mt-20 items-center justify-center gap-10 flex flex-col px-4 lg:px-0">
+      <!-- section 1-->
+      <div class="w-full h-24 lg:h-[279px] rounded-[45px] border p-[50px] bg-gray-100 lg:bg-brand-300 drop-shadow-card px-7 lg:px-[60px] py-[41px] flex flex-col items-center justify-center">
+        <div class="w-full h-[77px] flex font-medium">
+          <h1 class="text-3xl lg:text-6xl py-1.5 flex items-center">01</h1>
+          <h3 class="text-xl lg:text-3xl lg:w-[1059px] py-[19px] pl-[25px]">Consultation</h3>
+          <div class="lg:py-2 lg:pl-[284px] ml-auto flex items-center">
+            <img src="./public/svg/minus-icon.svg" alt="min-icon" class="lg:max-w-[58px] lg:h-[58px] hidden lg:flex">
+            <img src="./public/svg/plus-icon.svg" alt="plus-icon" class="lg:hidden max-w-10 h-10">
+          </div>
+        </div>
+        <div class="bg-black w-full h-px my-[30px] lg:flex hidden"></div>
+        <div>
+          <p class="w-full text-lg h-[60px] lg:flex hidden">
+            During the initial consultation, we will discuss your business goals and objectives, target audience, and
+            current marketing efforts. This will allow us to understand your needs and tailor our services to best fit
+            your requirements.
+          </p>
+        </div>
+      </div>
+      <!-- section 2 -->
+      <div class="w-full h-24 lg:h-[159px] rounded-[45px] border p-[50px] bg-gray-100 flex drop-shadow-card px-7 lg:px-[60px] py-[41px]">
+        <div class="w-full lg:h-[77px] flex font-medium gap-5">
+          <h1 class="text-3xl lg:text-6xl py-1.5 flex items-center">02</h1>
+          <h3 class="text-xl lg:text-3xl lg:w-[1059px] lg:py-[19px] lg:pl-[25px] flex items-center">Research and
+            Strategy Development</h3>
+          <div class="lg:py-2 lg:pl-[274px] ml-auto flex items-center">
+            <img src="./public/svg/plus-icon.svg" alt="plus-icon" class="max-w-10 h-10 lg:max-w-[58px] lg:h-[58px]">
+          </div>
+        </div>
+      </div>
+      <!-- section 3 -->
+      <div class="w-full h-24 lg:h-[159px] rounded-[45px] border p-[50px] bg-gray-100 flex drop-shadow-card px-7 lg:px-[60px] py-[41px]">
+        <div class="w-full lg:h-[77px] flex font-medium gap-5">
+          <h1 class="text-3xl lg:text-6xl py-1.5 flex items-center">03</h1>
+          <h3 class="text-xl lg:text-3xl lg:w-[1059px] lg:py-[19px] lg:pl-[25px] flex items-center">Implementation</h3>
+          <div class="lg:py-2 lg:pl-[274px] ml-auto flex items-center">
+            <img src="./public/svg/plus-icon.svg" alt="plus-icon" class="max-w-10 h-10 lg:max-w-[58px] lg:h-[58px]">
+          </div>
+        </div>
+      </div>
+      <!-- section 4 -->
+      <div class="w-full h-24 lg:h-[159px] rounded-[45px] border p-[50px] bg-gray-100 flex drop-shadow-card px-7 lg:px-[60px] py-[41px]">
+        <div class="w-full lg:h-[77px] flex items-center font-medium gap-5">
+          <h1 class="text-3xl lg:text-6xl py-1.5">04</h1>
+          <h3 class="text-xl lg:text-3xl lg:w-[1059px] lg:py-[19px] lg:pl-[25px]">Monitoring and Optimization</h3>
+          <div class="lg:py-2 lg:pl-[274px] ml-auto flex items-center">
+            <img src="./public/svg/plus-icon.svg" alt="plus-icon" class="max-w-10 h-10 lg:max-w-[58px] lg:h-[58px]">
+          </div>
+        </div>
+      </div>
+      <!-- section 5 -->
+      <div class="w-full h-24 lg:h-[159px] rounded-[45px] border p-[50px] bg-gray-100 flex drop-shadow-card px-7 lg:px-[60px] py-[41px]">
+        <div class="w-full lg:h-[77px] flex items-center font-medium gap-5">
+          <h1 class="text-3xl lg:text-6xl py-1.5">05</h1>
+          <h3 class="text-xl lg:text-3xl lg:w-[1059px] lg:py-[19px] lg:pl-[25px]">Reporting and Communication</h3>
+          <div class="lg:py-2 lg:pl-[274px] ml-auto flex items-center">
+            <img src="./public/svg/plus-icon.svg" alt="plus-icon" class="max-w-10 h-10 lg:max-w-[58px] lg:h-[58px]">
+          </div>
+        </div>
+      </div>
+      <!-- section 6 -->
+      <div class="w-full h-24 lg:h-[159px] rounded-[45px] border p-[50px] bg-gray-100 flex drop-shadow-card px-7 lg:px-[60px] py-[41px]">
+        <div class="w-full lg:h-[77px] flex items-center font-medium gap-5">
+          <h1 class="text-3xl lg:text-6xl py-1.5">06</h1>
+          <h3 class="text-xl lg:text-3xl lg:w-[1059px] lg:py-[19px] lg:pl-[25px]">Continual Improvement</h3>
+          <div class="lg:py-2 lg:pl-[274px] ml-auto flex items-center">
+            <img src="./public/svg/plus-icon.svg" alt="plus-icon" class="max-w-10 h-10 lg:max-w-[58px] lg:h-[58px]">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end -->
+
+    <!-- Team Section -->
+    <div class="mx-auto flex w-full flex-col mt-28 px-4">
+      <div class="flex flex-col lg:flex-row gap-6 lg:gap-10 items-center lg:items-start text-center lg:text-left justify-between lg:justify-start">
+        <h2 class="bg-brand-300 text-[40px] font-medium text-black px-[7px] rounded-[7px]">Team</h2>
+        <p class="text-base lg:text-lg text-black max-w-[473px]">
+          Meet the skilled and experienced team behind our successful digital marketing strategies
+        </p>
+      </div>
+    </div>
+
+    <!-- Group of cards -->
+    <div class="mx-auto max-w-[1441px] px-4 lg:px-0 flex flex-col gap-10 mt-16">
+
+      <!-- Layout -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+        <!-- Card 1 -->
+        <div class="bg-white border px-[35px] py-10 rounded-[45px] drop-shadow-card relative">
+          <div class="flex items-end gap-5">
+            <img src="public/svg/Image-1.png" alt="image-1" class="w-[110px] h-[110px]">
+            <div>
+              <h4 class="font-medium">John Smith</h4>
+              <p class="w-[148px]">CEO and Founder</p>
+            </div>
+            <img src="public/svg/LinkedInGreen.svg" alt="linkind"
+              class="w-[34px] h-[34px] absolute top-[40px] right-[35px]">
+          </div>
+          <hr class="my-7" />
+          <p class="max-w-[317px]">
+            10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="max-w-[381px] bg-white border px-[35px] py-10 rounded-[45px] drop-shadow-card">
+          <div class="flex items-end gap-5">
+            <img src="public/svg/Image-2.png" alt="image-2" class="w-[110px] h-[110px]">
+            <div>
+              <h4 class="font-medium">Jane Doe</h4>
+              <p class="w-[194px]">Director of Operations</p>
+            </div>
+            <img src="public/svg/LinkedInGreen.svg" alt="linkind"
+              class="w-[34px] h-[34px] absolute top-[40px] right-[35px]">
+          </div>
+          <hr class="my-7" />
+          <p class="max-w-[317px]">
+            7+ years of experience in project management and team leadership. Strong organizational and communication
+            skills
+          </p>
+        </div>
+
+
+        <!-- Card 3 -->
+        <div class="max-w-[381px] bg-white border px-[35px] py-10 rounded-[45px] drop-shadow-card">
+          <div class="flex items-end gap-5">
+            <img src="public/svg/Image-3.png" alt="image-3" class="w-[110px] h-[110px]">
+            <div>
+              <h4 class="font-medium">Michael Brown</h4>
+              <p class="w-[183px]">Senior SEO Specialist</p>
+            </div>
+            <img src="public/svg/LinkedInGreen.svg" alt="linkind"
+              class="w-[34px] h-[34px] absolute top-[40px] right-[35px]">
+          </div>
+          <hr class="my-7" />
+          <p class="max-w-[317px]">
+            5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization
+          </p>
+        </div>
+
+
+        <!-- Card 4 -->
+        <div class="max-w-[381px] bg-white border px-[35px] py-10 rounded-[45px] drop-shadow-card">
+          <div class="flex gap-5 items-end">
+            <img src="public/svg/Image-4.png" alt="image-4" class="w-[110px] h-[110px]">
+            <div>
+              <h4 class="font-medium">Emily Johnson</h4>
+              <p class="w-[114px]">PPC Manager</p>
+            </div>
+            <img src="public/svg/LinkedInGreen.svg" alt="linkind"
+              class="w-[34px] h-[34px] absolute top-[40px] right-[35px]">
+          </div>
+          <hr class="my-7" />
+          <p class="max-w-[317px]">
+            3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis
+          </p>
+        </div>
+
+
+        <!-- Card 5 -->
+        <div class="max-w-[387px] bg-white border px-[35px] py-10 rounded-[45px] drop-shadow-card relative">
+          <div class="flex gap-5 items-end">
+            <img src="public/svg/Image-5.png" alt="image-5" class="w-[110px] h-[110px]">
+            <div>
+              <h4 class="font-medium">Brian Williams</h4>
+              <p class="">Social Media Specialist</p>
+            </div>
+          </div>
+          <img src="public/svg/LinkedInGreen.svg" alt="linkind"
+            class="w-[34px] h-[34px] absolute top-[40px] right-[35px]">
+          <hr class="my-7" />
+          <p class="max-w-[317px]">
+            4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing
+            metrics, and building engagement
+          </p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="max-w-[387px] bg-white border px-[35px] py-10 rounded-[45px] drop-shadow-card">
+          <div class="flex items-end gap-5">
+            <img src="public/svg/Image-6.png" alt="image-6" class="w-[110px] h-[110px]">
+            <div>
+              <h4 class="font-medium">Sarah Kim</h4>
+              <p class="w-[194px]">Content Creator</p>
+            </div>
+            <img src="public/svg/LinkedInGreen.svg" alt="linkind"
+              class="w-[34px] h-[34px] absolute top-[40px] right-[35px]">
+          </div>
+          <hr class="my-7" />
+          <p class="max-w-[317px]">
+            2+ years of experience in writing and editing Skilled in creating compelling, SEO-optimized content for
+            various industries
+          </p>
+        </div>
+      </div>
+
+      <!-- Button-->
+      <div class="flex justify-center lg:justify-end">
+        <button class="w-[269px] h-[68px] bg-dark-2 text-white rounded-[14px] transition-all">
+          See all team
+        </button>
+      </div>
+    </div>
+    <!-- end -->
+
+    <!-- Section Testimonial -->
+    <div class="mx-auto flex w-full flex-col mt-24">
+      <div
+        class="flex flex-col lg:flex-row gap-6 lg:gap-10 items-center lg:items-start text-center lg:text-left justify-between lg:justify-start">
+        <h3 class="bg-brand-300 text-[40px] font-medium text-black px-[7px] rounded-[7px] w-fit">Testimonials</h3>
+        <p class="text-base lg:text-lg text-black max-w-[473px]">
+          Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services
+        </p>
+      </div>
+    </div>
+
+    <!-- testimonials block -->
+    <div class="px-4 lg:px-0">
+      <div class="mt-20 h-full lg:h-[625px] mx-auto max-w-[1240px] rounded-[45px] bg-black lg:py-[77px] p-7">
+        <!-- Top content -->
+        <div class="flex w-full lg:overflow-x-auto scrollbar-hide gap-5">
+          <div class="flex w-screen flex-row items-center lg:gap-[40px]">
+            <!-- Card testimoni 1 -->
+            <div class="flex flex-col gap-14 lg:gap-[36px]">
+              <div class="border-brand-300 rounded-[45px] border lg:px-[52px] lg:py-[50px] p-7">
+                <p class="w-full lg:w-[502px] text-[16px] lg:text-lg text-white">
+                  "We have been working with Positivus for the past year and have seen a significant increase in website
+                  traffic and leads as a result of
+                  their efforts. The team is professional, responsive, and truly cares about the success of our
+                  business. We highly recommend Positivus to any
+                  company looking to grow their online presence."
+                </p>
               </div>
-              <p class="mt-[35px] text-base lg:text-xl font-normal text-black">
-                Our digital marketing agency helps businesses grow and succeed online through a range of services including
-                SEO, PPC, social media marketing, and
-                content creation.
-              </p>
-              <button
-                class="bg-black w-full rounded-xl py-4 mt-6 text-white text-base lg:w-auto lg:px-9 lg:py-5 lg:mt-[35px]">
-                Book a consultation
-              </button>
+              <div class="flex flex-col pl-15 lg:pl-0">
+                <h6 class="text-brand-500 text-xl font-medium">John Smith</h6>
+                <p class="text-lg text-white">Marketing Director at XYZ Corp</p>
+              </div>
             </div>
-            <!-- Right Content -->
-            <div class="hidden lg:flex">
-              <img src="./public/svg/illustration-hero.svg" alt="illustration-hero">
-            </div>
-          </div>
-        </div>
-        <!-- End Section Hero -->
 
-
-        <!-- Clients Section -->
-        <section
-          class="mx-auto max-w-[1240px] flex flex-wrap justify-center lg:justify-between gap-12 mt-12 px-4 grayscale">
-          <img src="/svg/logo-amazon.svg" alt="Amazon" class="h-10">
-          <img src="/svg/logo-dribbble.svg" alt="Dribbble" class="h-10">
-          <img src="/svg/logo-hubspot.svg" alt="HubSpot" class="h-10">
-          <img src="/svg/logo-notion.svg" alt="Notion" class="h-10">
-          <img src="/svg/logo-netflix.png" alt="Netflix" class="h-10">
-          <img src="/svg/logo-zoom.png" alt="Zoom" class="h-10">
-        </section>
-        <!-- End Clients Section -->
-
-        <!-- Services Section -->
-        <div class="mx-auto flex w-full flex-col mt-28 px-4">
-          <div class="flex flex-col lg:flex-row gap-6 lg:gap-10 items-center lg:items-start text-center lg:text-left justify-center lg:justify-start">
-            <h2 class="bg-brand-300 text-[40px] font-medium text-black px-[7px] rounded-[7px]">Services</h2>
-            <p class="text-base lg:text-lg text-black max-w-[580px]">
-              At our digital marketing agency, we offer a range of services to
-              help businesses grow and succeed online. These services include:
-            </p>
-          </div>
-        </div>
-
-
-        <div class="mx-auto max-w-full px-4 lg:px-0 flex flex-col lg:grid lg:grid-cols-2 gap-10 mt-20">
-          <!-- card section 1-->
-          <div class="w-full h-[310px] lg:justify-between rounded-[45px] border p-10 lg:p-[50px] bg-gray-50 flex drop-shadow-card">
-            <div class="flex flex-col justify-between">
+            <!-- Card testimoni 2 -->
+            <div class="lg:flex flex-col gap-[36px] hidden">
+              <div class="border-brand-300 rounded-[45px] border px-[52px] py-[50px]">
+                <p class="w-[502px] text-lg text-white">
+                  "We have been working with Positivus for the past year and have seen a significant increase in website
+                  traffic and leads as a result of
+                  their efforts. The team is professional, responsive, and truly cares about the success of our
+                  business. We highly recommend Positivus to any
+                  company looking to grow their online presence."
+                </p>
+              </div>
               <div class="flex flex-col">
-                <h3 class="font-medium text-2xl lg:text-3xl bg-brand-300 rounded-[7px] w-fit px-[7px]">Search engine</h3>
-                <h3 class="font-medium text-2xl lg:text-3xl bg-brand-300 rounded-[7px] w-fit px-[7px]">optimization</h3>
+                <h6 class="text-brand-500 text-xl font-medium">John Smith</h6>
+                <p class="text-lg text-white">Marketing Director at XYZ Corp</p>
               </div>
-                <div>
-                  <a href="#" class="gap-4 flex items-center">
-                    <img src="./public/svg/Icon-panah1.svg" alt="icon-panah">
-                    <span class="text-[20px] leading-[28px] py-2 lg:flex hidden">Learn more</span>
-                  </a>
-                </div>
             </div>
-            <div class="w-[210px] h-full flex items-end lg:items-start">
-              <img src="./public/svg/Illustration-1.svg" alt="Illustration-1">
-            </div>
-          </div>
 
-          <!-- card section 2-->
-          <div
-            class="w-full h-[310px] lg:justify-between rounded-[45px] border p-10 lg:p-[50px] bg-brand-300 flex drop-shadow-card">
-            <div class="flex flex-col justify-between">
+            <!-- Card testimoni 3 -->
+            <div class="lg:flex flex-col gap-[36px] hidden">
+              <div class="border-brand-300 rounded-[45px] border px-[52px] py-[50px]">
+                <p class="w-[502px] text-lg text-white">
+                  "We have been working with Positivus for the past year and have seen a significant increase in website
+                  traffic and leads as a result of
+                  their efforts. The team is professional, responsive, and truly cares about the success of our
+                  business. We highly recommend Positivus to any
+                  company looking to grow their online presence."
+                </p>
+              </div>
               <div class="flex flex-col">
-                <h3 class="font-medium text-2xl lg:text-3xl bg-white rounded-[7px] w-fit px-[7px]">Pay-per-clicka</h3>
-                <h3 class="font-medium text-2xl lg:text-3xl bg-white rounded-[7px] w-fit px-[7px]">advertising</h3>
-              </div>
-              <div>
-                <a href="#" class="gap-4 flex items-center">
-                  <img src="./public/svg/Icon-panah1.svg" alt="icon-panah">
-                  <span class="text-[20px] leading-[28px] py-2 hidden lg:flex">Learn more</span>
-                </a>
+                <h6 class="text-brand-500 text-xl font-medium">John Smith</h6>
+                <p class="text-lg text-white">Marketing Director at XYZ Corp</p>
               </div>
             </div>
-            <div class="w-[210px] h-full flex items-end lg:items-start">
-              <img src="./public/svg/Illustration-2.svg" alt="Illustration-2">
-            </div>
-          </div>
-
-
-          <!-- card section 3-->
-          <div
-            class="w-full h-[310px] lg:justify-between rounded-[45px] border p-10 lg:p-[50px] bg-black flex drop-shadow-card">
-            <div class="flex flex-col justify-between">
-              <div class="flex flex-col">
-                <h3 class="font-medium text-2xl lg:text-3xl bg-white rounded-[7px] w-fit px-[7px]">Social Media</h3>
-                <h3 class="font-medium text-2xl lg:text-3xl bg-white rounded-[7px] w-fit px-[7px]">Marketing</h3>
-              </div>
-              <div>
-                <a href="#" class="gap-4 flex items-center">
-                  <img src="./public/svg/Icon-panah2.svg" alt="icon-panah">
-                  <span class="text-[20px] leading-[28px] py-2 hidden lg:flex">Learn more</span>
-                </a>
-              </div>
-            </div>
-            <div class="w-[210px] h-full flex items-end lg:items-start">
-              <img src="./public/svg/Illustration-3.svg" alt="Illustration-3">
-            </div>
-          </div>
-
-          <!-- card section 4-->
-          <div
-            class="w-full h-[310px] lg:justify-between rounded-[45px] border p-10 lg:p-[50px] bg-gray-50 flex drop-shadow-card">
-            <div class="flex flex-col justify-between">
-              <div class="flex flex-col">
-                <h3 class="font-medium text-2xl lg:text-3xl bg-brand-300 rounded-[7px] w-fit px-[7px]">Email</h3>
-                <h3 class="font-medium text-2xl lg:text-3xl bg-brand-300 rounded-[7px] w-fit px-[7px]">Marketing</h3>
-              </div>
-              <div>
-                <a href="#" class="gap-4 flex items-center">
-                  <img src="./public/svg/Icon-panah1.svg" alt="icon-panah">
-                  <span class="text-[20px] leading-[28px] py-2 hidden lg:flex">Learn more</span>
-                </a>
-              </div>
-            </div>
-            <div class="w-[145px] lg:w-[210px] h-full flex items-end lg:items-start">
-              <img src="./public/svg/Illustration-4.svg" alt="Illustration-4">
-            </div>
-          </div>
-
-          <!-- card section 5-->
-          <div
-            class="w-full h-[310px] lg:justify-between rounded-[45px] border p-10 lg:p-[50px] bg-brand-300 flex drop-shadow-card">
-            <div class="flex flex-col justify-between">
-              <div class="flex flex-col">
-                <h3 class="font-medium text-2xl lg:text-3xl bg-white rounded-[7px] w-fit px-[7px]">Content</h3>
-                <h3 class="font-medium text-2xl lg:text-3xl bg-white rounded-[7px] w-fit px-[7px]">Creation</h3>
-              </div>
-              <div>
-                <a href="#" class="gap-4 flex items-center">
-                  <img src="./public/svg/Icon-panah1.svg" alt="icon-panah">
-                  <span class="text-[20px] leading-[28px] py-2 hidden lg:flex">Learn more</span>
-                </a>
-              </div>
-            </div>
-            <div class="w-[210px] h-full flex items-end lg:items-start">
-              <img src="./public/svg/Illustration-5.svg" alt="Illustration-5">
-            </div>
-          </div>
-
-          <!-- card section 6-->
-          <div class="w-full h-[310px] lg:justify-between rounded-[45px] border p-10 lg:p-[50px] bg-black flex drop-shadow-card">
-            <div class="flex flex-col justify-between">
-              <div class="flex flex-col">
-                <h3 class="font-medium text-2xl lg:text-3xl bg-white rounded-[7px] w-fit px-[7px]">Analytics and</h3>
-                <h3 class="font-medium text-2xl lg:text-3xl bg-white rounded-[7px] w-fit px-[7px]">Tracking</h3>
-              </div>
-                <div>
-                  <a href="#" class="gap-4 flex items-center">
-                    <img src="./public/svg/Icon-panah2.svg" alt="icon-panah">
-                    <span class="text-[20px] leading-[28px] py-2 hidden lg:flex">Learn more</span>
-                  </a>
-                </div>
-              </div>
-              <div class="w-[210px] h-full flex items-end lg:items-start">
-                <img src="./public/svg/Illustration-6.svg" alt="Illustration-6">
-              </div>
-            </div>  
-        </div>
-        <!-- End Services Section -->
-
-          <!-- CTA block -->
-          <div class="p-4">
-            <div class="mx-auto items-center w-full rounded-[45px] p-[45px] lg:p-[60px] bg-gray-100 flex mt-16">
-              <!-- Left Content -- -->
-              <div class="max-w-[500px]">
-                <h3 class="font-bold text-2xl lg:text-3xl text-black">Let’s make things happen</h3>
-                <p class="mt-6 text-base lg:text-lg text-black">
-                  Contact us today to learn more about how our digital
-                  marketing services can help your business grow and succeed online.</p>
-                <button class="w-full lg:w-[290px] bg-black mt-6 rounded-xl px-9 py-5 text-white text-sm lg:text-xl">
-                  <span class="hidden lg:block">Get your free proposal</span>
-                  <span class="block lg:hidden">Get your proposal</span>                
-                </button>
-              </div>
-              <!-- Right Content -->
-              <div class="max-w-[500px] max-h-[395px] hidden lg:flex ml-auto">
-                <img src="./public/svg/Illustration-CTA.svg" class="h-[300px] w-[400px] object-contain"
-                  alt="Ilustration-CTA">
-              </div>
-            </div>
-          </div>
-          <!-- end CTA block -->
-
-          <!-- Case Studies Section -->
-          <div class="mx-auto flex w-full flex-col mt-28 px-4">
-            <div class="flex flex-col lg:flex-row gap-6 lg:gap-10 items-center lg:items-start text-center lg:text-left justify-between lg:justify-start">
-              <h2 class="bg-brand-300 text-[40px] font-medium text-black px-[7px] rounded-[7px]">Case Studies</h2>
-              <p class="text-base lg:text-lg text-black max-w-[580px] mb-10">
-                Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies
-              </p>
-            </div>
-          </div>
-
-
-         <!-- flex lg:hidden( hanya terlihat di mobile, tapi tidak terlihat di dekstop). 
-              hiddenlg:flex( tidak terlihat di mobile, tapi terlihat di dekstop) -->
-
-          <!-- Case Studies Cards Mobile -->
-          <div class="max-w-3xl px-4 overflow-x-auto flex lg:hidden">
-            <div class="flex min-w-[1180px] gap-6">
-              <div class="bg-gray-900 w-[326px] h-[280px] rounded-[45px] text-white flex flex-col justify-center p-10">
-                <p>For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.</p>
-                <a href="#" class="mt-4 flex items-center text-brand-200 gap-4"> Learn more 
-                  <img src="./public/svg/Icon-Link.svg" class="w-[17px]">
-                </a>
-              </div>
-              <div class="bg-gray-900 w-[326px] h-[280px] rounded-[45px] text-white flex flex-col justify-center p-10">
-                <p>For an e-commerce company, we developed a comprehensive SEO strategy that led to a 30% increase in organic traffic and a 20% boost in conversions.</p>
-                <a href="#" class="mt-4 flex items-center text-brand-200 gap-4"> Learn more 
-                  <img src="./public/svg/Icon-Link.svg" class="w-[17px]">
-                </a>
-              </div>
-              <div class="bg-gray-900 w-[326px] h-[280px] rounded-[45px] text-white flex flex-col justify-center p-10">
-                <p>For a healthcare provider, we created a social media campaign that increased followers by 50% and engagement by 200% within just 6 months.</p>
-                <a href="#" class="mt-4 flex items-center text-brand-200 gap-4"> Learn more 
-                  <img src="./public/svg/Icon-Link.svg" class="w-[17px]">
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Case Studies Cards Dekstop -->
-          <div class="mx-auto max-w-[1240px] h-[326px] bg-gray-900 text-lg text-white rounded-[45px] hidden lg:flex justify-between gap-16 p-[70px_60px] mt-16">
-            <!-- Card section 1 -->
-            <div class="flex-1 flex flex-col justify-between">
-              <p class="max-w-[286px]">For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50%
-                increase in website traffic and a 25% increase in sales.</p>
-              <a href="#" class="mt-4 flex items-center text-brand-200 gap-4">
-                Learn more <img src="./public//svg/Icon-Link.svg" class="w-[17px]">
-              </a>
-            </div>
-
-            <!-- Garis pemisah -->
-            <div class="w-[1px] bg-gray-500 mx-auto"></div>
-
-
-            <!-- Card section 2 -->
-            <div class="flex-1 flex flex-col justify-between">
-              <p class="max-w-[286px]">For a B2B software company, we developed an SEO strategy that resulted in a first
-                page
-                ranking for key keywords and a 200% increase in organic traffic.</p>
-              <a href="#" class="mt-4 flex items-center text-brand-200 gap-4">
-                Learn more <img src="./public//svg/Icon-Link.svg" class="w-[17px]">
-              </a>
-            </div>
-
-            <!-- Garis pemisah -->
-            <div class="w-[1px] bg-gray-500 mx-auto"></div>
-
-            <!-- Card section 3 -->
-            <div class="flex-1 flex flex-col justify-between">
-              <p class="max-w-[286px]">For a national retail chain, we created a social media marketing campaign that
-                increased followers by 25% and generated a 20% increase in online sales.</p>
-              <a href="#" class="mt-4 flex items-center text-brand-200 gap-4">
-                Learn more <img src="./public//svg/Icon-Link.svg" class="w-[17px]">
-              </a>
-            </div>
-          </div>
-
-
-          <!-- Our Working Process Section -->
-          <div class="mx-auto flex w-full flex-col mt-28 px-4">
-            <div class="flex flex-col lg:flex-row gap-6 lg:gap-10 items-center lg:items-start text-center lg:text-left justify-between lg:justify-start">
-              <h2 class="bg-brand-300 text-[40px] font-medium text-black px-[7px] rounded-[7px] hidden lg:flex">Our Working Process</h2>
-              <div class="flex lg:hidden flex-col items-center">
-                <h2 class="bg-brand-300 text-[40px] font-medium text-black px-[7px] rounded-[7px] w-fit">Our Working</h2>
-                <h2 class="bg-brand-300 text-[40px] font-medium text-black px-[7px] rounded-[7px] w-fit">Process</h2>
-              </div>
-              <p class="text-base lg:text-lg text-black max-w-[292px]">
-                Step-by-Step Guide to Achieving Your Business Goals
-              </p>
-            </div>
-          </div>
-  
-          <div class="mx-auto max-w-[1234px] grid gap-[30px] mt-16">
-            <!-- Card section 1 -->
-            <div class="min-h-[279px] font-medium border bg-brand-300 rounded-[45px] px-[60px] py-[41px] drop-shadow-card">
-              <div class="flex items-center justify-between">
-                <aside class="flex gap-7 items-center">
-                  <h2 class="text-[60px]">01</h2>
-                  <h3 class="text-[30px]">Consultation</h3>
-                </aside>
-                <img src="public/svg/minus-icon.svg" alt="minus-icon" class="w-[58px] h-[58px]">
-              </div>
-              <hr class="my-[30px]" />
-              <p class="text-lg max-w-[1114px]">
-                During the initial consultation, we will discuss your business goals and objectives, target audience, and
-                current marketing
-                efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.
-              </p>
-            </div>
-
-            <!-- Card section 2 -->
-            <div class="min-h-[159px] font-medium border bg-gray-100 rounded-[45px] px-[60px] py-[41px] drop-shadow-card">
-              <div class="flex items-center justify-between">
-                <aside class="flex gap-7 items-center">
-                  <h2 class="text-[60px]">02</h2>
-                  <h3 class="text-[30px]">Research and Strategy Development</h3>
-                </aside>
-                <img src="public/svg/plus-icon.svg" alt="plus-icon" class="w-[58px] h-[58px]">
-              </div>
-            </div>
-
-            <!-- Card section 3 -->
-            <div class="min-h-[159px] font-medium border bg-gray-100 rounded-[45px] px-[60px] py-[41px] drop-shadow-card">
-              <div class="flex items-center justify-between">
-                <aside class="flex gap-7 items-center">
-                  <h2 class="text-[60px]">03</h2>
-                  <h3 class="text-[30px]">Implementation</h3>
-                </aside>
-                <img src="public/svg/plus-icon.svg" alt="plus-icon" class="w-[58px] h-[58px]">
-              </div>
-            </div>
-
-            <!-- Card section 4 -->
-            <div class="min-h-[159px] font-medium border bg-gray-100 rounded-[45px] px-[60px] py-[41px] drop-shadow-card">
-              <div class="flex items-center justify-between">
-                <aside class="flex gap-7 items-center">
-                  <h2 class="text-[60px]">04</h2>
-                  <h3 class="text-[30px]">Monitoring and Optimization</h3>
-                </aside>
-                <img src="public/svg/plus-icon.svg" alt="plus-icon" class="w-[58px] h-[58px]">
-              </div>
-            </div>
-
-            <!-- Card section 5 -->
-            <div class="min-h-[159px] font-medium border bg-gray-100 rounded-[45px] px-[60px] py-[41px] drop-shadow-card">
-              <div class="flex items-center justify-between">
-                <aside class="flex gap-7 items-center">
-                  <h2 class="text-[60px]">05</h2>
-                  <h3 class="text-[30px]">Reporting and Communication</h3>
-                </aside>
-                <img src="public/svg/plus-icon.svg" alt="plus-icon" class="w-[58px] h-[58px]">
-              </div>
-            </div>
-
-            <!-- Card section 6 -->
-            <div class="min-h-[159px] font-medium border bg-gray-100 rounded-[45px] px-[60px] py-[41px] drop-shadow-card">
-              <div class="flex items-center justify-between">
-                <aside class="flex gap-7 items-center">
-                  <h2 class="text-[60px]">06</h2>
-                  <h3 class="text-[30px]">Continual Improvement</h3>
-                </aside>
-                <img src="public/svg/plus-icon.svg" alt="plus-icon" class="w-[58px] h-[58px]">
-              </div>
-            </div>
+            <!-- End Card testimoni 3 -->
           </div>
         </div>
-        <!-- end -->
-
-        <!-- Team Section -->
-        <div class="mx-auto flex w-full flex-col mt-28 px-4">
-          <div class="flex flex-col lg:flex-row gap-6 lg:gap-10 items-center lg:items-start text-center lg:text-left justify-between lg:justify-start">
-            <h2 class="bg-brand-300 text-[40px] font-medium text-black px-[7px] rounded-[7px]">Team</h2>
-            <p class="text-base lg:text-lg text-black max-w-[473px]">
-              Meet the skilled and experienced team behind our successful digital marketing strategies
-            </p>
+        <!-- Bottom content -->
+        <div class="lg:mt-[124px] mt-10 flex w-full flex-row items-center justify-center px-7">
+          <div class="flex h-10 w-[564px] items-center justify-between">
+            <img src="./public/svg/Arrow left.svg" class="h-6 w-6" />
+            <div class="flex flex-row items-center gap-[19px]">
+              <img src="./public/svg/stars.svg" class="h-3.5 w-3.5" />
+              <img src="./public/svg/stars.svg" class="h-3.5 w-3.5" />
+              <img src="./public/svg/stars.svg" class="h-3.5 w-3.5" />
+              <img src="./public/svg/stars.svg" class="h-3.5 w-3.5" />
+              <img src="./public/svg/stars.svg" class="h-3.5 w-3.5" />
+            </div>
+            <img src="./public/svg/Arrow right.svg" class="h-6 w-6" />
           </div>
         </div>
+      </div>
+    </div>
+    <!-- End seaction -->
 
-        <!-- Group of cards -->
-        <div class="mx-auto max-w-[1441px] px-4 lg:px-0 flex flex-col gap-10 mt-16">
 
-          <!-- Layout -->
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+    <!-- Contact Us -->
+    <div class="mx-auto flex w-full flex-col mt-28 px-4">
+      <div class="flex flex-col lg:flex-row gap-6 lg:gap-10 items-center lg:items-start text-center lg:text-left justify-center lg:justify-start">
+        <h2 class="bg-brand-300 text-[40px] font-medium text-black px-[7px] rounded-[7px]">Contact Us</h2>
+        <p class="text-base lg:text-lg text-black max-w-[323px]">
+          Connect with Us: Let's Discuss Your Digital Marketing Needs
+        </p>
+      </div>
+    </div>
 
-            <!-- Card 1 -->
-            <div class="bg-white border px-[35px] py-10 rounded-[45px] drop-shadow-card relative">
-              <div class="flex items-end gap-5">
-                <img src="public/svg/Image-1.png" alt="image-1" class="w-[110px] h-[110px]">
-                <div>
-                  <h4 class="font-medium">John Smith</h4>
-                  <p class="w-[148px]">CEO and Founder</p>
-                </div>
-                <img src="public/svg/LinkedInGreen.svg" alt="linkind"
-                  class="w-[34px] h-[34px] absolute top-[40px] right-[35px]">
+    <!-- contact block -->
+    <div class="mx-auto max-w-[1440px] px-4 lg:px-0 mt-10 lg:mt-20">
+      <!-- Container -->
+      <div class="max-w-[1240px] lg:max-h-[773px] px-4 lg:px-25 pt-10 lg:pt-15 pb-10 lg:pb-20 gap-2.5 rounded-[20px] lg:rounded-[45px] bg-gray-200 flex flex-col lg:flex-row justify-between items-center relative overflow-hidden">
+        <!-- Left Content -->
+        <div class="max-w-[556px] flex flex-col gap-5 lg:gap-10">
+          <!-- Radio Button -->
+          <div class="h-[28px] flex gap-[20px] lg:gap-[35px]">
+            <!-- Say Hi -->
+            <label class="flex items-center cursor-pointer">
+              <input type="radio" name="contact" class="peer hidden">
+              <div
+                class="w-[20px] h-[20px] lg:w-[28px] lg:h-[28px] border border-black rounded-full flex items-center justify-center bg-white peer-checked:bg-brand-300 transition-colors">
               </div>
-              <hr class="my-7" />
-              <p class="max-w-[317px]">
-                10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy
-              </p>
+              <span class="ml-2 text-[14px] lg:text-base">Say Hi</span>
+            </label>
+            <!-- Get a Quote -->
+            <label class="flex items-center cursor-pointer">
+              <input type="radio" name="contact" class="peer hidden">
+              <div
+                class="w-[20px] h-[20px] lg:w-[28px] lg:h-[28px] border border-black rounded-full flex items-center justify-center bg-white peer-checked:bg-brand-300 transition-colors">
+              </div>
+              <span class="ml-2 text-[14px] lg:text-base">Get a Quote</span>
+            </label>
+          </div>
+          <!-- Form -->
+          <div class="w-full max-w-[556px] flex flex-col gap-[15px] lg:gap-[25px]">
+            <div class="flex flex-col gap-1 lg:gap-1.5">
+              <label class="text-[14px] lg:text-[16px]">Name</label>
+              <input type="text" placeholder="Name"
+                class="w-full h-[40px] lg:h-[59px] px-[20px] lg:px-[30px] py-[10px] lg:py-[18px] bg-gray-100 border rounded-[10px] lg:rounded-[14px]">
             </div>
-
-            <!-- Card 2 -->
-            <div class="max-w-[381px] bg-white border px-[35px] py-10 rounded-[45px] drop-shadow-card">
-              <div class="flex items-end gap-5">
-                <img src="public/svg/Image-2.png" alt="image-2" class="w-[110px] h-[110px]">
-                <div>
-                  <h4 class="font-medium">Jane Doe</h4>
-                  <p class="w-[194px]">Director of Operations</p>
-                </div>
-                <img src="public/svg/LinkedInGreen.svg" alt="linkind"
-                  class="w-[34px] h-[34px] absolute top-[40px] right-[35px]">
-              </div>
-              <hr class="my-7" />
-              <p class="max-w-[317px]">
-                7+ years of experience in project management and team leadership. Strong organizational and communication
-                skills
-              </p>
+            <div class="flex flex-col gap-1 lg:gap-1.5">
+              <label class="text-[14px] lg:text-[16px]">Email*</label>
+              <input type="text" placeholder="Email"
+                class="w-full h-[40px] lg:h-[59px] px-[20px] lg:px-[30px] py-[10px] lg:py-[18px] bg-gray-100 border rounded-[10px] lg:rounded-[14px]">
             </div>
-
-
-            <!-- Card 3 -->
-            <div class="max-w-[381px] bg-white border px-[35px] py-10 rounded-[45px] drop-shadow-card">
-              <div class="flex items-end gap-5">
-                <img src="public/svg/Image-3.png" alt="image-3" class="w-[110px] h-[110px]">
-                <div>
-                  <h4 class="font-medium">Michael Brown</h4>
-                  <p class="w-[183px]">Senior SEO Specialist</p>
-                </div>
-                <img src="public/svg/LinkedInGreen.svg" alt="linkind"
-                  class="w-[34px] h-[34px] absolute top-[40px] right-[35px]">
-              </div>
-              <hr class="my-7" />
-              <p class="max-w-[317px]">
-                5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization
-              </p>
-            </div>
-
-
-            <!-- Card 4 -->
-            <div class="max-w-[381px] bg-white border px-[35px] py-10 rounded-[45px] drop-shadow-card">
-              <div class="flex gap-5 items-end">
-                <img src="public/svg/Image-4.png" alt="image-4" class="w-[110px] h-[110px]">
-                <div>
-                  <h4 class="font-medium">Emily Johnson</h4>
-                  <p class="w-[114px]">PPC Manager</p>
-                </div>
-                <img src="public/svg/LinkedInGreen.svg" alt="linkind"
-                  class="w-[34px] h-[34px] absolute top-[40px] right-[35px]">
-              </div>
-              <hr class="my-7" />
-              <p class="max-w-[317px]">
-                3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis
-              </p>
-            </div>
-
-
-            <!-- Card 5 -->
-            <div class="max-w-[387px] bg-white border px-[35px] py-10 rounded-[45px] drop-shadow-card relative">
-              <div class="flex gap-5 items-end">
-                <img src="public/svg/Image-5.png" alt="image-5" class="w-[110px] h-[110px]">
-                <div>
-                  <h4 class="font-medium">Brian Williams</h4>
-                  <p class="">Social Media Specialist</p>
-                </div>
-              </div>
-              <img src="public/svg/LinkedInGreen.svg" alt="linkind"
-                class="w-[34px] h-[34px] absolute top-[40px] right-[35px]">
-              <hr class="my-7" />
-              <p class="max-w-[317px]">
-                4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing
-                metrics, and building engagement
-              </p>
-            </div>
-
-            <!-- Card 6 -->
-            <div class="max-w-[387px] bg-white border px-[35px] py-10 rounded-[45px] drop-shadow-card">
-              <div class="flex items-end gap-5">
-                <img src="public/svg/Image-6.png" alt="image-6" class="w-[110px] h-[110px]">
-                <div>
-                  <h4 class="font-medium">Sarah Kim</h4>
-                  <p class="w-[194px]">Content Creator</p>
-                </div>
-                <img src="public/svg/LinkedInGreen.svg" alt="linkind"
-                  class="w-[34px] h-[34px] absolute top-[40px] right-[35px]">
-              </div>
-              <hr class="my-7" />
-              <p class="max-w-[317px]">
-                2+ years of experience in writing and editing Skilled in creating compelling, SEO-optimized content for
-                various industries
-              </p>
+            <div class="flex flex-col gap-1 lg:gap-1.5">
+              <label class="text-[14px] lg:text-[16px]">Message*</label>
+              <textarea type="text" placeholder="Massage"
+                class="w-full h-[100px] lg:h-[190px] px-[20px] lg:px-[30px] py-[10px] lg:py-[18px] bg-gray-100 border rounded-[10px] lg:rounded-[14px]"></textarea>
             </div>
           </div>
+          <!-- Button -->
+          <button
+            class="w-full lg:w-[556px] h-[40px] lg:h-[68px] px-[20px] lg:px-[35px] py-2 lg:py-5 bg-dark-2 border rounded-[10px] lg:rounded-[14px] text-white">Send
+            Message</button>
+        </div>
+        <!-- Right Content -->
+        <div class="hidden lg:block absolute -right-[345px] w-[690px] h-[690px]">
+          <img src="./public/svg/Illustration-Contact-Us.svg" class="w-full h-full object-contain" alt="Illustration">
+        </div>
+      </div>
+    </div>
 
-        <!-- Button-->
-          <div class="flex justify-center lg:justify-end">
-            <button class="w-[269px] h-[68px] bg-dark-2 text-white rounded-[14px] transition-all">
-              See all team
-            </button>
+    <!-- NOTE : HARUS DIPERBAIKI ketika mobile -->
+    <!-- Footer -->
+    <div class="mx-auto max-w-[1442px] mt-20 hidden lg:flex">
+      <div class="w-full h-[514px] gap-[50px] px-15 pt-[55px] pb-[50px] rounded-t-[45px] bg-dark-2 text-white">
+        <div class="mx-auto flex w-full max-w-[1121px] items-center justify-between pt-8 pb-1.5">
+          <img src="/svg/positivus-logo-white.svg" />
+          <!-- menu -->
+          <div class="flex items-center gap-10">
+            <a class="text-[18px] leading-7 underline">About Us</a>
+            <a class="text-[18px] leading-7 underline">Services</a>
+            <a class="text-[18px] leading-7 underline">Use Cases</a>
+            <a class="text-[18px] leading-7 underline">Pricing</a>
+            <a class="text-[18px] leading-7 underline">Blog</a>
+          </div>
+          <div class="flex items-center gap-5">
+            <img src="public/svg/LinkedIn.svg" class="w-[30px] h-[30px]">
+            <img src="public/svg/Facebook.svg" class="w-[30px] h-[30px]">
+            <img src="public/svg/Twitter.svg" class="w-[30px] h-[30px]">
           </div>
         </div>
-
-        <!-- Section Testimonial -->
-        <div class="mx-auto flex w-full flex-col mt-24">
-          <div class="flex flex-col lg:flex-row gap-6 lg:gap-10 items-center lg:items-start text-center lg:text-left justify-between lg:justify-start">
-            <h3 class="bg-brand-300 text-[40px] font-medium text-black px-[7px] rounded-[7px] w-fit">Testimonials</h3>
-            <p class="text-base lg:text-lg text-black max-w-[473px]">
-              Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services
-            </p>
-          </div>
-        </div>
-
-          <div class="mt-20 h-[625px] w-full overflow-hidden rounded-[45px] bg-dark-2 py-[77px]">
-            <!-- Top content -->
-            <div class="flex w-full overflow-x-auto scrollbar-hide">
-              <div class="flex w-screen flex-row items-center gap-[40px]">
-                <!-- Card testimoni -->
-                <div class="flex flex-col gap-[36px]">
-                  <div class="border-brand-300 rounded-3xl border px-[52px] py-[50px]">
-                    <p class="w-[502px] text-lg text-white">
-                      "We have been working with Positivus for the past year and have seen a significant increase in website
-                      traffic and leads as a result of
-                      their efforts. The team is professional, responsive, and truly cares about the success of our
-                      business. We highly recommend Positivus to any
-                      company looking to grow their online presence."
-                    </p>
-                  </div>
-                  <div class="flex flex-col">
-                    <h6 class="text-brand-500 text-xl font-medium">John Smith</h6>
-                    <p class="text-lg text-white">Marketing Director at XYZ Corp</p>
-                  </div>
-                </div>
-                <!-- End Card testimoni -->
-
-                <!-- Card testimoni -->
-                <div class="flex flex-col gap-[36px]">
-                  <div class="border-brand-300 rounded-3xl border px-[52px] py-[50px]">
-                    <p class="w-[502px] text-lg text-white">
-                      "We have been working with Positivus for the past year and have seen a significant increase in website
-                      traffic and leads as a result of
-                      their efforts. The team is professional, responsive, and truly cares about the success of our
-                      business. We highly recommend Positivus to any
-                      company looking to grow their online presence."
-                    </p>
-                  </div>
-                  <div class="flex flex-col">
-                    <h6 class="text-brand-500 text-xl font-medium">John Smith</h6>
-                    <p class="text-lg text-white">Marketing Director at XYZ Corp</p>
-                  </div>
-                </div>
-                <!-- End Card testimoni -->
-
-                <!-- Card testimoni -->
-                <div class="flex flex-col gap-[36px]">
-                  <div class="border-brand-300 rounded-3xl border px-[52px] py-[50px]">
-                    <p class="w-[502px] text-lg text-white">
-                      "We have been working with Positivus for the past year and have seen a significant increase in website
-                      traffic and leads as a result of
-                      their efforts. The team is professional, responsive, and truly cares about the success of our
-                      business. We highly recommend Positivus to any
-                      company looking to grow their online presence."
-                    </p>
-                  </div>
-                  <div class="flex flex-col">
-                    <h6 class="text-brand-500 text-xl font-medium">John Smith</h6>
-                    <p class="text-lg text-white">Marketing Director at XYZ Corp</p>
-                  </div>
-                </div>
-                <!-- End Card testimoni -->
-              </div>
-            </div>
-            <!-- Bottom content -->
-            <div class="mt-[124px] flex w-full flex-row items-center justify-center">
-              <div class="flex h-10 w-[564px] items-center justify-between">
-                <img src="public/svg/Arrow left.svg" class="h-6 w-6" />
-                <div class="flex flex-row items-center gap-[19px]">
-                  <img src="public/svg/stars-green.svg" class="h-3.5 w-3.5" />
-                  <img src="/public/svg/stars.svg" class="h-3.5 w-3.5" />
-                  <img src="/public/svg/stars.svg" class="h-3.5 w-3.5" />
-                  <img src="/public/svg/stars.svg" class="h-3.5 w-3.5" />
-                  <img src="/public/svg/stars.svg" class="h-3.5 w-3.5" />
-                </div>
-                <img src="/public/svg/Arrow right.svg" class="h-6 w-6" />
-              </div>
+        <!-- Content Footer -->
+        <div class="flex justify-between items-start mt-[66px] h-[185px]">
+          <!-- Contact Info -->
+          <div class="space-y-5">
+            <h4 class="text-[18px] bg-brand-300 text-black font-semibold px-[7px] rounded-[7px] w-max mb-[27px]">Contact
+              us:</h4>
+            <p>Email: info@positivus.com</p>
+            <p>Phone: 555-567-8901</p>
+            <div class="flex flex-col">
+              <p>Address: 1234 Main St</p>
+              <p>Moonstone City, Stardust State 12345</p>
             </div>
           </div>
-        </div>
-        <!-- End Section Testimonial -->
-
-
-        <!-- Contact Us -->
-        <div class="mx-auto flex w-full flex-col mt-28 px-4">
-          <div class="flex flex-col lg:flex-row gap-6 lg:gap-10 items-center lg:items-start text-center lg:text-left justify-center lg:justify-start">
-            <h2 class="bg-brand-300 text-[40px] font-medium text-black px-[7px] rounded-[7px]">Contact Us</h2>
-            <p class="text-base lg:text-lg text-black max-w-[323px]">
-              Connect with Us: Let's Discuss Your Digital Marketing Needs
-            </p>
+          <!-- Subscribe Form -->
+          <div class="bg-dark-4 px-10 py-[58px] rounded-[14px] flex items-center gap-[10px]">
+            <input type="email" placeholder="Email"
+              class="w-max px-[36px] py-[22px] bg-dark-4 border border-white rounded-[14px] text-white ">
+            <button class="bg-brand-300 text-black px-[36px] py-[22px] rounded-[14px] w-max">Subscribe to news</button>
           </div>
         </div>
+        <!-- Divider Line -->
+        <div class="border-t border-white mt-12.5"></div>
+        <!-- Footer Bottom -->
+        <div class="flex gap-10 text-white text-[18px] mt-10">
+          <p>© 2023 Positivus. All Rights Reserved.</p>
+          <a href="#" class="hover:underline underline">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
 
-        <!-- contact block -->
-        <div class="mx-auto max-w-[1440px] px-4 lg:px-25 mt-10 lg:mt-20">
-          <!-- Container -->
-          <div class="max-w-[1240px] lg:max-h-[773px] px-4 lg:px-25 pt-10 lg:pt-15 pb-10 lg:pb-20 gap-2.5 rounded-[20px] lg:rounded-[45px] bg-gray-200 flex flex-col lg:flex-row justify-between items-center relative overflow-hidden">
-            <!-- Left Content -->
-            <div class="max-w-[556px] flex flex-col gap-5 lg:gap-10">
-              <!-- Radio Button -->
-              <div class="h-[28px] flex gap-[20px] lg:gap-[35px]">
-                <!-- Say Hi -->
-                <label class="flex items-center cursor-pointer">
-                  <input type="radio" name="contact" class="peer hidden">
-                  <div class="w-[20px] h-[20px] lg:w-[28px] lg:h-[28px] border border-black rounded-full flex items-center justify-center bg-white peer-checked:bg-brand-300 transition-colors">
-                  </div>
-                  <span class="ml-2 text-[14px] lg:text-base">Say Hi</span>
-                </label>
-                <!-- Get a Quote -->
-                <label class="flex items-center cursor-pointer">
-                  <input type="radio" name="contact" class="peer hidden">
-                  <div class="w-[20px] h-[20px] lg:w-[28px] lg:h-[28px] border border-black rounded-full flex items-center justify-center bg-white peer-checked:bg-brand-300 transition-colors">
-                  </div>
-                  <span class="ml-2 text-[14px] lg:text-base">Get a Quote</span>
-                </label>
-              </div>
-              <!-- Form -->
-              <div class="w-full max-w-[556px] flex flex-col gap-[15px] lg:gap-[25px]">
-                <div class="flex flex-col gap-1 lg:gap-1.5">
-                  <label class="text-[14px] lg:text-[16px]">Name</label>
-                  <input type="text" placeholder="Name" class="w-full h-[40px] lg:h-[59px] px-[20px] lg:px-[30px] py-[10px] lg:py-[18px] bg-gray-100 border rounded-[10px] lg:rounded-[14px]">
-                </div>
-                <div class="flex flex-col gap-1 lg:gap-1.5">
-                  <label class="text-[14px] lg:text-[16px]">Email*</label>
-                  <input type="text" placeholder="Email" class="w-full h-[40px] lg:h-[59px] px-[20px] lg:px-[30px] py-[10px] lg:py-[18px] bg-gray-100 border rounded-[10px] lg:rounded-[14px]">
-                </div>
-                <div class="flex flex-col gap-1 lg:gap-1.5">
-                  <label class="text-[14px] lg:text-[16px]">Message*</label>
-                  <textarea type="text" placeholder="Massage" class="w-full h-[100px] lg:h-[190px] px-[20px] lg:px-[30px] py-[10px] lg:py-[18px] bg-gray-100 border rounded-[10px] lg:rounded-[14px]"></textarea>
-                </div>
-              </div>
-              <!-- Button -->
-              <button class="w-full lg:w-[556px] h-[40px] lg:h-[68px] px-[20px] lg:px-[35px] py-2 lg:py-5 bg-dark-2 border rounded-[10px] lg:rounded-[14px] text-white">Send Message</button>
-            </div>
-            <!-- Right Content -->
-            <div class="hidden lg:block absolute -right-[345px] w-[690px] h-[690px]">
-              <img src="./public/svg/Illustration-Contact-Us.svg" class="w-full h-full object-contain" alt="Illustration">
-            </div>
+    <!-- Responsive Footer -->
+    <div class="mx-auto max-w-[1442px] mt-20 px-0 lg:hidden">
+      <div class="max-w-[1242px] lg:h-[514px] gap-[20px] px-4 pt-4 pb-4 bg-dark-2 text-white flex flex-col">
+        <img src="/svg/positivus-logo-white.svg" class="mx-auto mb-4 lg:mb-0" />
+        <!-- menu -->
+        <div class="flex flex-col lg:flex-row items-center gap-4 lg:gap-10 mx-auto">
+          <a class="text-[16px] lg:text-[18px] leading-7">About Us</a>
+          <a class="text-[16px] lg:text-[18px] leading-7">Services</a>
+          <a class="text-[16px] lg:text-[18px] leading-7">Use Cases</a>
+          <a class="text-[16px] lg:text-[18px] leading-7">Pricing</a>
+          <a class="text-[16px] lg:text-[18px] leading-7">Blog</a>
+        </div>
+        <!-- Contact Info -->
+        <div class="space-y-5 text-center mx-auto">
+          <h4 class="text-[16px] text-center bg-brand-300 text-black font-semibold px-[7px] rounded-[7px] w-max mx-auto mb-[10px]"> Contact us:</h4>
+          <p>Email: info@positivus.com</p>
+          <p>Phone: 555-567-8901</p>
+          <div class="flex flex-col">
+            <p>Address: 1234 Main St</p>
+            <p>Moonstone City, Stardust State 12345</p>
           </div>
         </div>
-
-        <!-- NOTE : HARUS DIPERBAIKI ketika mobile -->
-        <!-- Footer -->
-        <div class="mx-auto max-w-[1442px] px-25 mt-20">
-          <div class="max-w-[1242px] h-[514px] gap-[50px] px-15 pt-[55px] pb-[50px] rounded-t-[45px] bg-dark-2 text-white">
-            <div class="mx-auto flex w-full max-w-[1121px] items-center justify-between pt-8 pb-1.5">
-              <img src="/svg/positivus-logo-white.svg" />
-              <!-- menu -->
-              <div class="flex items-center gap-10">
-                <a class="text-[18px] leading-7 underline">About Us</a>
-                <a class="text-[18px] leading-7 underline">Services</a>
-                <a class="text-[18px] leading-7 underline">Use Cases</a>
-                <a class="text-[18px] leading-7 underline">Pricing</a>
-                <a class="text-[18px] leading-7 underline">Blog</a>
-              </div>
-              <div class="flex items-center gap-5">
-                <img src="public/svg/LinkedIn.svg" class="w-[30px] h-[30px]">
-                <img src="public/svg/Facebook.svg" class="w-[30px] h-[30px]">
-                <img src="public/svg/Twitter.svg" class="w-[30px] h-[30px]">
-              </div>
-            </div>
-
-            <!-- Content Footer -->
-            <div class="flex justify-between items-start mt-[66px] h-[185px]">
-              <!-- Contact Info -->
-              <div class="space-y-5">
-                <h4 class="text-[18px] bg-brand-300 text-black font-semibold px-[7px] rounded-[7px] w-max mb-[27px]">Contact
-                  us:</h4>
-                <p>Email: info@positivus.com</p>
-                <p>Phone: 555-567-8901</p>
-                <div class="flex flex-col">
-                  <p>Address: 1234 Main St</p>
-                  <p>Moonstone City, Stardust State 12345</p>
-                </div>
-              </div>
-
-              <!-- Subscribe Form -->
-              <div class="bg-dark-4 px-10 py-[58px] rounded-[14px] flex items-center gap-[10px]">
-                <input type="email" placeholder="Email"
-                  class="w-max px-[36px] py-[22px] bg-dark-4 border border-white rounded-[14px] text-white ">
-                <button class="bg-brand-300 text-black px-[36px] py-[22px] rounded-[14px] w-max">Subscribe to news</button>
-              </div>
-            </div>
-
-            <!-- Divider Line -->
-            <div class="border-t border-white mt-12.5"></div>
-
-            <!-- Footer Bottom -->
-            <div class="flex gap-10 text-white text-[18px] mt-10">
-              <p>© 2023 Positivus. All Rights Reserved.</p>
-              <a href="#" class="hover:underline underline">Privacy Policy</a>
-            </div>
-          </div>
+        <!-- Subscribe Form -->
+        <div class="bg-dark-4 px-4 lg:px-10 py-[20px] lg:py-[58px] rounded-[14px] flex flex-col lg:flex-row items-center gap-[10px] mx-auto">
+          <input type="email" placeholder="Email"
+            class="w-full lg:w-max px-[20px] lg:px-[36px] py-[10px] lg:py-[22px] bg-dark-4 border border-white rounded-[14px] text-white ">
+          <button
+            class="bg-brand-300 text-black px-[20px] lg:px-[36px] py-[10px] lg:py-[22px] rounded-[14px] w-full lg:w-max">Subscribe
+            to news</button>
         </div>
-        <!-- END NOTE : HARUS DIPERBAIKI ketika mobile -->
+        <div class="flex items-center gap-5 mx-auto">
+          <img src="public/svg/LinkedIn.svg" class="w-[30px] h-[30px]">
+          <img src="public/svg/Facebook.svg" class="w-[30px] h-[30px]">
+          <img src="public/svg/Twitter.svg" class="w-[30px] h-[30px]">
+        </div>
+        <!-- Divider Line -->
+        <div class="border-t border-white mt-4 lg:mt-12.5"></div>
+        <!-- Footer Bottom -->
+        <div class="flex flex-col lg:flex-row gap-4 lg:gap-10 text-white text-[16px] lg:text-[18px] mt-4 lg:mt-10 text-center mx-auto">
+          <p> 2023 Positivus. All Rights Reserved.</p>
+          <a href="#" class="hover:underline">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
 
-      </main>
-    </body>
+    <!-- END NOTE : HARUS DIPERBAIKI ketika mobile -->
+  </main>
+</body>
 
-    </html>
+</html>
 
 
-    <!-- NOTE : SEMUANYA MASIH BERANTAKAN, SEENGGAKNYA KALO MAU DIREVIEW DIBERESIN DULU JANGAN MASIH BERANTAKAN SEMUA MINTA DIREVIEW -->
+<!-- NOTE : SEMUANYA MASIH BERANTAKAN, SEENGGAKNYA KALO MAU DIREVIEW DIBERESIN DULU JANGAN MASIH BERANTAKAN SEMUA MINTA DIREVIEW -->
